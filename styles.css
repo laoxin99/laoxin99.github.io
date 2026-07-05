@@ -19,6 +19,8 @@ body {
   color: var(--ink);
   background: var(--soft);
   line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -63,11 +65,11 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.88fr);
-  gap: 40px;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.76fr);
+  gap: 56px;
   align-items: center;
-  min-height: 560px;
-  padding: 32px 0 54px;
+  min-height: 520px;
+  padding: 34px 0 58px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -82,18 +84,19 @@ main {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 680px;
   margin: 0;
-  font-size: clamp(46px, 6.6vw, 82px);
-  line-height: 0.98;
+  font-size: clamp(40px, 5.2vw, 66px);
+  line-height: 1.06;
   letter-spacing: 0;
+  font-weight: 760;
 }
 
 .lead {
-  max-width: 680px;
+  max-width: 640px;
   margin: 24px 0 0;
   color: var(--muted);
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .actions {
@@ -128,7 +131,7 @@ h1 {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 18px 42px rgba(23, 32, 51, 0.08);
+  box-shadow: 0 16px 34px rgba(23, 32, 51, 0.07);
   overflow: hidden;
 }
 
@@ -224,9 +227,10 @@ article,
 
 h2 {
   margin: 0 0 12px;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0;
+  font-weight: 760;
 }
 
 p {
@@ -274,7 +278,7 @@ ol {
 }
 
 .detail-hero h1 {
-  font-size: clamp(44px, 6vw, 78px);
+  font-size: clamp(40px, 5vw, 64px);
 }
 
 .publication-card {
@@ -404,6 +408,14 @@ ol {
 
 .toc-list li + li {
   margin-top: 6px;
+}
+
+.toc-note {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.48;
 }
 
 .link-strip {
