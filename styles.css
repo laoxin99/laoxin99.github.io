@@ -558,3 +558,177 @@ ol {
     display: grid;
   }
 }
+
+/* Personal introduction and longform */
+.about-section {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.62fr) minmax(0, 1.38fr);
+  gap: 44px;
+  padding: 64px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-heading h2 {
+  max-width: 360px;
+  font-size: 36px;
+  line-height: 1.12;
+}
+
+.about-copy {
+  max-width: 760px;
+}
+
+.about-copy p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.82;
+}
+
+.story-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 8px;
+  padding: 0 16px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.story-link:hover {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.story-page {
+  width: min(100% - 48px, 1180px);
+}
+
+.story-hero {
+  max-width: 860px;
+  padding: 74px 0 42px;
+  border-bottom: 1px solid var(--line);
+}
+
+.story-hero h1 {
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.04;
+}
+
+.story-intro {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.longform {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 54px 0 80px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.longform section + section {
+  margin-top: 52px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.longform h2 {
+  margin-bottom: 22px;
+  font-size: 30px;
+  line-height: 1.22;
+}
+
+.longform h3 {
+  margin: 34px 0 14px;
+  font-size: 21px;
+}
+
+.longform p {
+  margin-bottom: 18px;
+  font-family: "Noto Serif SC", "Songti SC", SimSun, serif;
+  font-size: 18px;
+  line-height: 1.95;
+}
+
+.longform blockquote {
+  margin: 28px 0;
+  padding: 18px 22px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+}
+
+.longform blockquote p {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 800;
+}
+
+.question-lines {
+  margin: 26px 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.question-lines p {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 800;
+}
+
+.question-lines p + p {
+  margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 42px 0;
+  }
+
+  .about-heading h2 {
+    font-size: 30px;
+  }
+
+  .about-copy p {
+    font-size: 16px;
+  }
+
+  .story-page {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .story-hero {
+    padding: 38px 0 28px;
+  }
+
+  .story-hero h1 {
+    font-size: 40px;
+  }
+
+  .longform {
+    padding: 36px 0 56px;
+  }
+
+  .longform section + section {
+    margin-top: 38px;
+    padding-top: 36px;
+  }
+
+  .longform h2 {
+    font-size: 26px;
+  }
+
+  .longform p {
+    font-size: 17px;
+    line-height: 1.88;
+  }
+}
