@@ -96,11 +96,11 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.76fr);
-  gap: 56px;
+  grid-template-columns: minmax(0, 0.96fr) minmax(360px, 0.78fr);
+  gap: 44px;
   align-items: center;
-  min-height: 520px;
-  padding: 34px 0 58px;
+  min-height: 430px;
+  padding: 24px 0 40px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -115,26 +115,26 @@ main {
 }
 
 h1 {
-  max-width: 680px;
+  max-width: 620px;
   margin: 0;
-  font-size: clamp(40px, 5.2vw, 66px);
-  line-height: 1.06;
+  font-size: clamp(34px, 3.8vw, 44px);
+  line-height: 1.12;
   letter-spacing: 0;
   font-weight: 760;
 }
 
 .lead {
   max-width: 640px;
-  margin: 24px 0 0;
+  margin: 20px 0 0;
   color: var(--muted);
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .actions a {
@@ -249,8 +249,9 @@ article,
 }
 
 .l0-entry h2 {
-  max-width: 680px;
-  font-size: clamp(26px, 3vw, 38px);
+  max-width: 700px;
+  font-size: clamp(23px, 2.2vw, 28px);
+  line-height: 1.22;
 }
 
 .l0-entry p {
@@ -355,7 +356,7 @@ ol {
 
 .detail-hero {
   max-width: 880px;
-  padding: 74px 0 48px;
+  padding: 58px 0 40px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -368,7 +369,8 @@ ol {
 }
 
 .detail-hero h1 {
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.08;
 }
 
 .publication-card {
@@ -556,11 +558,11 @@ ol {
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 34px;
   }
 
   .lead {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .research-grid {
@@ -603,15 +605,15 @@ ol {
 .about-section {
   display: grid;
   grid-template-columns: minmax(240px, 0.62fr) minmax(0, 1.38fr);
-  gap: 44px;
-  padding: 64px 0;
+  gap: 36px;
+  padding: 52px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .about-heading h2 {
   max-width: 360px;
-  font-size: 36px;
-  line-height: 1.12;
+  font-size: 30px;
+  line-height: 1.18;
 }
 
 .about-copy {
@@ -620,8 +622,8 @@ ol {
 
 .about-copy p {
   color: var(--muted);
-  font-size: 17px;
-  line-height: 1.82;
+  font-size: 16px;
+  line-height: 1.78;
 }
 
 .story-link {
@@ -648,13 +650,14 @@ ol {
 
 .story-hero {
   max-width: 860px;
-  padding: 74px 0 42px;
+  padding: 58px 0 36px;
   border-bottom: 1px solid var(--line);
 }
 
 .story-hero h1 {
-  font-size: clamp(42px, 6vw, 72px);
-  line-height: 1.04;
+  max-width: 760px;
+  font-size: clamp(34px, 4.2vw, 48px);
+  line-height: 1.08;
 }
 
 .story-intro {
@@ -735,7 +738,7 @@ ol {
   }
 
   .about-heading h2 {
-    font-size: 30px;
+    font-size: 27px;
   }
 
   .about-copy p {
@@ -751,7 +754,7 @@ ol {
   }
 
   .story-hero h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
 
   .longform {
