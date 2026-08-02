@@ -57,6 +57,37 @@ nav a {
   text-decoration: none;
 }
 
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+}
+
+.language-switch a {
+  min-width: 64px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+
+.language-switch a[aria-current="true"] {
+  color: #ffffff;
+  background: var(--accent);
+}
+
 main {
   width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
@@ -497,6 +528,15 @@ ol {
 
   nav {
     display: none;
+  }
+
+  .header-tools {
+    gap: 8px;
+  }
+
+  .language-switch a {
+    min-width: 54px;
+    padding: 6px 8px;
   }
 
   main {
