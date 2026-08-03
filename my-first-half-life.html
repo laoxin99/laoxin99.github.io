@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My First Half of Life: From a Calligraphy Brush to ZhiNao | Miao Lin</title>
   <meta name="description" content="Miao Lin's personal journey from calligraphy and the study of suffering and joy to Human Reaction Mechanism and ZhiNao AI.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260803-3">
 </head>
 <body>
   <header class="site-header">
@@ -16,6 +16,10 @@
         <a href="index.html#research">Research</a>
         <a href="index.html#boundary">Boundary</a>
       </nav>
+      <div class="page-controls" aria-label="Page navigation">
+        <a href="index.html">Home</a>
+        <button type="button" onclick="if (history.length > 1) { history.back(); } else { location.href='index.html'; }">Back</button>
+      </div>
       <div class="language-switch" aria-label="Language">
         <a href="my-first-half-life.html" lang="en" aria-current="true">English</a>
         <a href="my-first-half-life-zh.html" lang="zh-CN">中文</a>

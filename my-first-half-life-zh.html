@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>我的半生：从一支毛笔，到一套智脑 | 缪霖</title>
   <meta name="description" content="缪霖的个人经历：从书道、苦乐追问，到人类反应机制与智脑AI。">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260803-3">
 </head>
 <body>
   <header class="site-header">
@@ -16,6 +16,10 @@
         <a href="index-zh.html#research">研究入口</a>
         <a href="index-zh.html#boundary">边界声明</a>
       </nav>
+      <div class="page-controls" aria-label="页面导航">
+        <a href="index-zh.html">首页</a>
+        <button type="button" onclick="if (history.length > 1) { history.back(); } else { location.href='index-zh.html'; }">返回</button>
+      </div>
       <div class="language-switch" aria-label="语言">
         <a href="my-first-half-life.html" lang="en">English</a>
         <a href="my-first-half-life-zh.html" lang="zh-CN" aria-current="true">中文</a>
