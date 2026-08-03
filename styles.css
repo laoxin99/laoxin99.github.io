@@ -123,6 +123,21 @@ h1 {
   font-weight: 760;
 }
 
+.brand-title {
+  max-width: none;
+  font-size: 66px;
+  line-height: 1.06;
+}
+
+.brand-tagline {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
 .lead {
   max-width: 640px;
   margin: 20px 0 0;
@@ -559,6 +574,14 @@ ol {
 
   h1 {
     font-size: 34px;
+  }
+
+  .brand-title {
+    font-size: 48px;
+  }
+
+  .brand-tagline {
+    font-size: 12px;
   }
 
   .lead {
